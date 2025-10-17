@@ -1,0 +1,99 @@
+/* style.css */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(135deg, #1e3c72, #2a5298);
+	color: #fff;
+	padding: 2rem 1rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+form {
+	display: flex;
+	gap: 0.7rem;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+input {
+	padding: 0.8rem 1rem;
+	border-radius: 0.6rem;
+	border: none;
+	outline: none;
+	width: 250px;
+	font-size: 1rem;
+	background: rgba(255, 255, 255, 0.9);
+	color: #333;
+	transition: box-shadow 0.2s ease;
+}
+
+input:focus {
+	box-shadow: 0 0 0 2px #4fc3f7;
+}
+
+button {
+	padding: 0.8rem 1.3rem;
+	border: none;
+	border-radius: 0.6rem;
+	background: #4fc3f7;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.25s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background: #29b6f6;
+	transform: translateY(-2px);
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+/* ✅ Fixed image layout */
+#imageContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	max-width: 1150px; /* fits about 5 images of 210px + spacing */
+	margin-top: 1.5rem;
+}
+
+#imageContainer img {
+	width: 210px;
+	height: 295px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#imageContainer img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}

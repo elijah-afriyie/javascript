@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced DOM Manipulation Practice</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="title">ADVANCED DOM MANIPULATION PRACTICE</h1>
+
+<!-- Fruits Section -->
+<section id="fruits-section">
+    <h2 class="subtitle">Fruits</h2>
+    <ul id="fruits-list">
+        <li class="fruit">Apple <span class="origin">USA</span></li>
+        <li class="fruit">Banana <span class="origin">Ecuador</span></li>
+        <li class="fruit special">Cherry <span class="origin">Turkey</span></li>
+        <li class="fruit">Mango <span class="origin">India</span></li>
+    </ul>
+</section>
+
+<!-- Boxes Section -->
+<section id="boxes-section">
+    <h2 class="subtitle">Boxes</h2>
+    <div class="boxes">
+        <div class="box" id="box1">
+            Box 1
+            <p class="note">This is inside Box 1</p>
+        </div>
+        <div class="box" id="box2">
+            Box 2
+            <span class="inner">Inner of Box 2</span>
+        </div>
+        <div class="box" id="box3">
+            Box 3
+            <ul class="items">
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Buttons Section -->
+<section id="buttons-section">
+    <h2 class="subtitle">Buttons</h2>
+    <div class="controls">
+        <button class="btn primary">Play</button>
+        <button class="btn secondary">Pause</button>
+        <button class="btn danger">Stop</button>
+    </div>
+    <p class="description">These buttons control the boxes above.</p>
+</section>
+
+<!-- Articles Section -->
+<section id="articles-section">
+    <h2 class="subtitle">Articles</h2>
+    <article class="post featured">
+        <h3 class="post-title">Learning DOM Navigation</h3>
+        <p class="post-text">This article explains parent, child, and sibling relationships.</p>
+    </article>
+    <article class="post">
+        <h3 class="post-title">Advanced Traversal</h3>
+        <p class="post-text">You can navigate up, down, or sideways in the DOM tree.</p>
+    </article>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2025 DOM Playground</p>
+    <nav class="footer-nav">
+        <a href="#fruits-section">Fruits</a>
+        <a href="#boxes-section">Boxes</a>
+        <a href="#buttons-section">Buttons</a>
+        <a href="#articles-section">Articles</a>
+    </nav>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

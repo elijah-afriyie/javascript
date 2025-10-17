@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #444;
+  margin-top: 20px;
+}
+
+#fruits-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fruit {
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+}
+
+.boxes {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border: 2px solid steelblue;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+}

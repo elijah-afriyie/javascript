@@ -1,0 +1,143 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 1.4rem;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fruits List */
+#fruits-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+#fruits-list .fruit {
+    padding: 10px 15px;
+    background: #ecf0f1;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+#fruits-list .fruit:hover {
+    background: #dcdde1;
+    cursor: pointer;
+}
+
+/* Boxes */
+.boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background: #2980b9;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2ecc71;
+    cursor: pointer;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background: #e74c3c;
+    color: white;
+    padding: 30px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.gallery-item:hover {
+    background: #c0392b;
+    cursor: pointer;
+}
